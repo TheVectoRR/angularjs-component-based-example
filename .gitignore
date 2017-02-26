@@ -1,0 +1,7 @@
+// build folders
+bower_components
+node_modules
+
+// inteliji
+*.iml
+.idea
