@@ -4,7 +4,10 @@
     var module = angular.module("psMovies");
 
     module.component("movieList", {
-        templateUrl: "ps-movies/movie-list.component.html"
+        templateUrl: "ps-movies/movie-list.component.html",
+        controller: function(){
+            this.message = "hello from a component controller!";
+        }
     });
 
 }());
