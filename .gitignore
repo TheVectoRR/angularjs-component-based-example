@@ -1,6 +1,7 @@
 // build folders
 bower_components
 node_modules
+.bowerrc
 
 // inteliji
 *.iml

@@ -2,7 +2,9 @@
   "name": "ng15",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {},
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+  },
   "devDependencies": {
     "eslint": "2.5.3",
     "eslint-config-standard": "5.1.0",
@@ -11,6 +13,7 @@
     "jasmine-core": "2.4.1",
     "karma": "0.13.22",
     "karma-chrome-launcher": "0.2.3",
-    "karma-jasmine": "0.3.8"
+    "karma-jasmine": "0.3.8",
+    "http-server": "^0.9.0"
   }
 }
