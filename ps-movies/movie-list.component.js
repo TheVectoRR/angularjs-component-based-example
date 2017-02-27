@@ -6,7 +6,10 @@
     module.component("movieList", {
         templateUrl: "ps-movies/movie-list.component.html",
         controllerAs: "model",
-        controller: ["$http", controller]
+        controller: ["$http", controller],
+        // bindings: {                          // how to navigate programatically
+        //     "$router": "<"
+        // }
     });
 
     function controller($http){
@@ -18,7 +21,11 @@
             fetchMovies($http).then(function(movies){
                model.movies = movies;
             });
-        }
+        };
+
+        // module.goto = function(id){                          // how to navigate programatically
+        //     module.$router.navigate(["Details", {id:id}]);
+        // };
 
         model.upRating = function(movie){
             if(movie.rating < 5){
