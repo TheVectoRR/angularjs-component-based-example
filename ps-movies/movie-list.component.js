@@ -27,6 +27,10 @@
         //     module.$router.navigate(["Details", {id:id}]);
         // };
 
+        model.setRating = function(movie, newRating){
+           movie.rating = newRating;
+        };
+
         model.upRating = function(movie){
             if(movie.rating < 5){
                 movie.rating += 1;
