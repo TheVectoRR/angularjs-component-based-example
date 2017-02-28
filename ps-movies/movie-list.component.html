@@ -23,8 +23,9 @@
                     <span class="glyphicon glyphicon-minus"></span>
                 </button>
 
-                <a ng-link="['Details', {id: movie.id}]" class="btn btn-default">
-                    <span class="glyphicon glyphicon-zoom-in"></span>
+                <!-- Overview will be the default child view to load. -->
+                <a ng-link="['Details', {id: movie.id}, 'Overview']" class="btn btn-default">
+                    <span class="glyphicon glyphicon-zoom-in"> </span>
                 </a>
 
             </td>
